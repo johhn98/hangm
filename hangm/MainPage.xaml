@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="hangm.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:hangm"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Height="836.825" Width="1363.81">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="-325,0,0,-102">
+        <Image x:Name="image" HorizontalAlignment="Left" Height="325.852" Margin="1166.918,108.074,0,0" VerticalAlignment="Top" Width="388.164" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="0.527"/>
+            </Image.RenderTransform>
+        </Image>
+        <Pivot Title="Pivot" Margin="604,0,0,174">
+            <PivotItem Header="PivotItem 0" Margin="1204,215,84,369">
+                <Grid/>
+            </PivotItem>
+            <PivotItem Header="PivotItem 1">
+                <Grid/>
+            </PivotItem>
+        </Pivot>
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="242" Margin="755,242,0,0" VerticalAlignment="Top" Width="704"/>
+        <Button x:Name="button" Content="a" HorizontalAlignment="Left" Margin="799,546,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.393,0.594" Width="38" Click="button_Click_1"/>
+        <Button x:Name="button1" Content="b" HorizontalAlignment="Left" Margin="863,546,0,0" VerticalAlignment="Top" Width="33" RenderTransformOrigin="-0.075,0.531" Click="guessClick"/>
+
+    </Grid>
+</Page>
