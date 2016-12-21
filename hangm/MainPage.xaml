@@ -13,7 +13,7 @@
                 <CompositeTransform Rotation="0.527"/>
             </Image.RenderTransform>
         </Image>
-        <Pivot Title="Pivot" Margin="604,0,0,174">
+        <Pivot Title="Pivot" Margin="594,-41,211,222">
             <PivotItem Header="PivotItem 0" Margin="1204,215,84,369">
                 <Grid/>
             </PivotItem>
@@ -21,7 +21,7 @@
                 <Grid/>
             </PivotItem>
         </Pivot>
-        <Image x:Name="image1" HorizontalAlignment="Left" Height="242" Margin="755,242,0,0" VerticalAlignment="Top" Width="704"/>
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="242" Margin="755,242,0,0" VerticalAlignment="Top" Width="704" Source="Hang1.png" RenderTransformOrigin="0.51,0.488" FocusVisualPrimaryBrush="{x:Null}"/>
         <Button x:Name="button" Content="a" HorizontalAlignment="Left" Margin="799,546,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.393,0.594" Width="38" Click="button_Click_1"/>
         <Button x:Name="button1" Content="b" HorizontalAlignment="Left" Margin="863,546,0,0" VerticalAlignment="Top" Width="33" RenderTransformOrigin="-0.075,0.531" Click="guessClick"/>
 

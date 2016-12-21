@@ -22,25 +22,56 @@ namespace hangm
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        private BitmapIcon[] hangImages = { hangm.MainPage.Hang1, hangm.MainPage.Hang2, hangm.MainPage.Hang3, hangm.MainPage.Hang4, hangm.MainPage.Hang5, hangm.MainPage.Hang6, hangm.MainPage.Hang7
 
 
         private int wrongGuesses = 0;
+
         public MainPage()
         {
             this.InitializeComponent();
 
+
+
+
+
             Application.Current.DebugSettings.EnableFrameRateCounter = false;
         }
 
+        public static BitmapIcon Hang1 { get; private set; }
         public static object Properties { get; private set; }
 
-        private void guessClick(object sender, RoutedEventArgs e)
+        private int wrongGuesses = 0;
+
+        private string[] words;
+
+        public Frame()
+        {
+            InitializeComponent();
+
+        }
+
+        private void loadwords()
+        {
+
+        }
+
+
+
+        private void guessClick(object sender, EventArgs e)
         {
             wrongGuesses++;
             if (wrongGuesses > 7)
             {
-                
+                hangImages.Image = hangImages[wrongGuesses];
+
+
             }
+            else
+            {
+                ContentDialogResult.None = "Verloren";
+            }
+
 
         }
     }
